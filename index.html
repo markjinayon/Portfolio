@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+        rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            //for active
+            $('.navbar .navbar-nav a').on('click', function () {
+                $('.navbar .navbar-nav').find('li.active').removeClass('active');
+                $(this).parent(' li ').addClass('active');
+            });
+            // for active scroll
+        });
+        
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home-section">
+                <i class="brand-icon fas fa-code fa-2x text-warning"> Portfolio</i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#home-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects-section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact-section">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container home-container" id="home-section">
+        <div class="row home-row">
+            <div class="col-lg-6">
+                <h2 class="text-white">Hello, I'm</h2>
+                <h1 class="text-warning m-heading">Mark Lester Jinayon</h1>
+                <h2 class="text-white">Backend Developer</h2>
+            </div>
+            <div class="col-lg-6">
+                <img src="/assets/images/boy.png" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+
+    <section class="container about-container" id="about-section">
+        <div class="row">
+            <div class="col-lg-6 col-10 pl-5 pt-5 pr-5 pb-5">
+                <img src="/assets/images/about_img.svg" class="img-fluid" />
+            </div>
+            <div class="col-lg-6 col-10 pl-5 pt-5 pr-5 pb-5 text-white">
+                <h3 class="text-warning">About Me</h3>
+                <h1 class="m-heading">A little bit about me.</h1>
+                <p>
+                    Hi, I'm Mark, a passionate computer science student looking to pursue a successful career in
+                    software development.
+                    Interested in the field of <b class="text-warning">Web Development</b>, <b
+                        class="text-warning">Artificial Intelligence</b>, and <b class="text-warning">Data Science </b>.
+                    Possess more
+                    than a year of hands-on experience building and testing software and cross-platform applications.
+                </p>
+                <br />
+                <p>
+                    
+                </p>
+                <a class="btn btn-outline-warning"
+                    href="https://cdn.fbsbx.com/v/t59.2708-21/275334634_280437944205923_3281678452753566126_n.pdf/marklesterjinayon_cv.pdf?_nc_cat=100&ccb=1-5&_nc_sid=0cab14&_nc_eui2=AeHZDz_i59zn8Y1vDFGsN_ceiV2iEnQKsDmJXaISdAqwOZT9Mt9eJpyko40PTnMUt_NRKgC_2tkn_NUAu7mgwOwl&_nc_ohc=RnTJeL3QM7YAX-ReDNk&_nc_ht=cdn.fbsbx.com&oh=03_AVIYeCjAQ9HfAmXuwnnBiGnF6ZKEVyHDvQ1sHQH5o4esiw&oe=623CC12F&dl=1">Download
+                    CV</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container projects-container" id="projects-section">
+        <h1 class="project-header text-warning mt-5 mb-3 pb-2">Projects</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8 col-9">
+                <div class="card">
+                    <img src="/assets/images/social.jpg" class="card-img" />
+                    <div class="card-body">
+                        <h4 class="card-title">AddMoko</h4>
+                        <p class="sub-title text-muted">Java, MySQL</p>
+                        <p class="card-text">
+                            A social networking application that connects people who share the same
+                            interests and activities.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-9">
+                <div class="card">
+                    <img src="/assets/images/weather.png" class="card-img" />
+                    <div class="card-body">
+                        <h4 class="card-title">HomeWeather</h4>
+                        <p class="sub-title text-muted">Python</p>
+                        <p class="card-text">
+                            Develop an improved weather predicting model system using past data to
+                            predict the next day’s temperature, precipitation, and humidity of a
+                            particular location
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-9">
+                <div class="card">
+                    <img src="/assets/images/ecommerce.png" class="card-img" />
+                    <div class="card-body">
+                        <h4 class="card-title">SWAPPIT</h4>
+                        <p class="sub-title text-muted">ReactJS, Firebase</p>
+                        <p class="card-text">
+                            A barter application where users can trade or swap their items to another
+                            user through online transaction without using money.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-9">
+                <div class="card">
+                    <img src="/assets/images/seer_logo.ico" class="card-img" />
+                    <div class="card-body">
+                        <h4 class="card-title">SeeR</h4>
+                        <p class="sub-title text-muted">C#, SQLite</p>
+                        <p class="card-text">
+                            An antivirus software made from C#. I am part of the developer team that
+                            aims to create and debug certain features of the application.
+                        </p>
+                        <a href="#" class="btn btn-warning">See Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid contact-container" id="contact-section">
+        <div class="container text-white py-5">
+            <!-- <h4 class="text-warning">Social Media</h4>
+            <h1 class="m-heading">Contact me.</h1> -->
+            <div class="row pt-5 d-flex justify-content-center">
+                <a class="col-lg-1 col-md-1 col-sm-4 col-6 media_link btn" target="_blank" href="https://www.linkedin.com/in/marklesterjinayon17">
+                    <i class="fab fa-linkedin-in fa-3x text-secondary"></i>
+                </a>
+                <a class="col-lg-1 col-md-1 col-sm-4 col-6 media_link btn" target="_blank" href="https://github.com/markjinayon">
+                    <i class="fab fa-github fa-3x text-secondary"></i>
+                </a>
+                <a class="col-lg-1 col-md-1 col-sm-4 col-6 media_link btn" target="_blank" href="https://twitter.com/id_MarkLJ">
+                    <i class="fab fa-twitter fa-3x text-secondary"></i>
+                </a>
+                <a class="col-lg-1 col-md-1 col-sm-4 col-6 media_link btn" target="_blank" href="https://www.facebook.com/BlankMark17/">
+                    <i class="fab fa-facebook fa-3x text-secondary"></i>
+                </a>
+                <a class="col-lg-1 col-md-1 col-sm-4 col-6 media_link btn" target="_blank" href="https://www.instagram.com/markkkjinayon/">
+                    <i class="fab fa-instagram fa-3x text-secondary"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

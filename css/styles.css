@@ -1,0 +1,105 @@
+body {
+    background: #1f2235;
+    font-family: "Baloo Tamma 2", cursive;
+    padding: 0px 0px 0px 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+.navbar {
+    background-color: #1f2235;
+    justify-content: start;
+}
+
+.nav-item {
+    margin-left: 3rem;
+}
+
+.nav-link {
+    border: 2px solid transparent
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+}
+
+.navbar .navbar-nav li.active > a {
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+}
+
+.home-container {
+    min-height: 100vh;
+    margin-top: 8rem;
+}
+
+.home-row {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+tab {
+    padding-left: 4em;
+}
+
+.home-row h1 {
+    font-size: 3rem ;
+}
+
+.home-row img {
+    min-height: 100vh;
+}
+
+.about-container {
+    background: #313552;
+    border-radius: .5rem;
+}
+
+.project-header {
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-container {
+    margin-bottom: 5rem;
+}
+
+.projects-container .row {
+    justify-items: center;
+}
+
+.card {
+    background: #fff8dc;
+    padding: .5rem .5rem .5rem .5rem;
+    min-height: 73vh;
+    width: auto;
+    margin-bottom: 1.8rem;
+}
+
+.card img {
+    height: 18rem;
+}
+
+#contact-section {
+    background: #313552;
+    min-height: 25  vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top: 2px solid gray;
+}
+  
+
+
+
+
+
